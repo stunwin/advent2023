@@ -13,7 +13,8 @@ def main():
         list = input.read().splitlines() 
 
     print(list[:10])
-    
+   
+   #HAHAHA THIS DOESNT WORK because numbers can share a letter kill me  
     for i in list:
         for n in numwords:
             i = i.replace(n, replacements[numwords.index(n)])
