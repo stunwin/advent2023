@@ -1,11 +1,7 @@
 import sys
-import string
-
-
 
 def main():
-    total = 0
-    
+    total = 0  
     load = {
         "red": 12,
         "green": 13,
@@ -31,7 +27,6 @@ def main():
         if valid:
             total += idx
             
-    
-    print(total)
+    print(total) #3059
         
 main()
