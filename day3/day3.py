@@ -13,7 +13,7 @@ def main():
     found = False
     for x, line in enumerate(grid):
         if found:
-            num_end = y
+            num_end = len(line)
             found = False
             charscan(grid, x - 1, num_start, num_end, valid_parts)
         for y, char in enumerate(line):
@@ -22,7 +22,7 @@ def main():
             elif (char in string.digits and not found):
                 num_start = y
                 found = True
-            elif ((char not in string.digits or y > len(line) - 1) and found):
+            elif ((char not in string.digits) and found):
                 num_end = y
                 found = False
                 charscan(grid, x, num_start, num_end, valid_parts)
